@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>MoreComplications</string>
+	<key>subtitle</key>
+	<string>By Skitty</string>
+	<key>titleFontSize</key>
+	<real>38</real>
+	<key>subtitleFontSize</key>
+	<real>26</real>
+	<key>tintColor</key>
+	<string>#53b567</string>
+	<key>textColor</key>
+	<string>#ffffff</string>
+	<key>subtitleTextColor</key>
+	<string>#ffffffc0</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>xyz.skitty.morecomplications</string>
+			<key>PostNotification</key>
+			<string>xyz.skitty.morecomplications.prefschanged</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Configuration</string>
+			<key>footerText</key>
+			<string>Settings changes require a respring.</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>SPStepperCell</string>
+			<key>defaults</key>
+			<string>xyz.skitty.morecomplications</string>
+			<key>PostNotification</key>
+			<string>xyz.skitty.morecomplications.prefschanged</string>
+			<key>default</key>
+			<real>2</real>
+			<key>min</key>
+			<real>1</real>
+			<key>max</key>
+			<real>3</real>
+			<key>key</key>
+			<string>rows</string>
+			<key>label</key>
+			<string>Rows: %i</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Respring</string>
+			<key>action</key>
+			<string>respring</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Credits</string>
+			<key>footerText</key>
+			<string>© Skitty 2024</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>SPCreditCell</string>
+			<key>label</key>
+			<string>Skitty</string>
+			<key>twitter</key>
+			<string>Skittyblock</string>
+			<key>subtitle</key>
+			<string>Developer</string>
+			<key>imageURL</key>
+			<string>https://github.com/skittyblock.png</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>MoreComplications</string>
+</dict>
+</plist>
